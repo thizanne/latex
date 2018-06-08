@@ -1,3 +1,7 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
 \usepackage{amsmath}
 %\usepackage{amsfonts}
 \usepackage{amssymb}
@@ -12,7 +16,6 @@
 %\usepackage{proof}
 \usepackage[all]{xy} % for diagram (as in commutative diagrams)
 \usepackage{mathrsfs}
-\usepackage{mathpartir}
 %\usepackage{unicode-math}
 \usepackage{stmaryrd}
 %\usepackage{cmll} %% fonts for linear logic
@@ -20,20 +23,11 @@
 \usepackage{tikz}
 \usepackage{color}
 \usepackage{listings}
-\usepackage{inconsolata}
 \usepackage{galois}
-\usepackage{fontspec}
 % \usepackage{bussproofs} %% Use this for proofs
 
+% Personal file to be able to write unicode chars with pdflatex
 \input{unicodechars}
-
-%\setmainfont[Mapping=tex-text,Ligatures=Common]{Linux Libertine O}
-\setmonofont[Scale=0.8]{Inconsolata}
-%\setmathfont{[Asana-Math]}
-
-\newcommand{\figref}[1]{\figurename~\ref{#1}}
-
-%\usemintedstyle{manni}
 
 \usepackage{hyperref}
 \definecolor{hyperlinkscolor}{RGB}{20,20,90}
@@ -47,20 +41,13 @@
         urlcolor=hyperlinkscolor}
 
 \lstset{ %
-%    float=t,
     keepspaces=true,
     showstringspaces=false,
-    basicstyle=\footnotesize\ttfamily,
-    keywordstyle=\bfseries\color{green!40!black},
-    commentstyle=\color{gray!40!black},
-    identifierstyle=\color{blue},
-    stringstyle=\color{orange},
+    basicstyle=\ttfamily,
+    keywordstyle=\bfseries,
+    commentstyle=\color{gray!60!black},
+    stringstyle=\color{gray!40!black},
 }
-
-% make listings float globally
-% \makeatletter
-% \let\lst@floatdefault\lst@float
-% \makeatother
 
 % Style for BNF grammars
 % Non terminal symbols in italic
@@ -78,26 +65,7 @@
 % \newtheorem{lemme}[théorème]{Lemme}
 % \newtheorem{remarque}{Remarque}[section]
 
-% \newtheorem{definition}{Definition}[section]
-% \newtheorem{theorem}[théorème]{Theorem}
-% \newtheorem{lemma}[théorème]{Lemma}
-
 % \newtheorem{proposition}[théorème]{Proposition}
 
 % \newtheorem*{note}{Note}
 % \newtheorem*{exemple}{Exemple}
-% \newtheorem*{example}{Example}
-
-% %% The following part can probably be removed
-% \usepackage{caption}
-% \DeclareCaptionFont{white}{\color{white}}
-% \DeclareCaptionFormat{listing}
-%         {\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}
-%         {\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
-% \captionsetup[lstlisting]{
-%         format=listing,
-%         labelfont=white,
-%         textfont=white,
-%         singlelinecheck=false,
-%         margin=0pt,
-%         font={bf,footnotesize}}
