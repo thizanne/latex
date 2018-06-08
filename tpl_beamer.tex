@@ -1,7 +1,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{enumerate}
-\usepackage[frenchb]{babel}
+% \usepackage[frenchb]{babel}
 \usepackage{geometry}
 \usepackage{amsthm}
 \usepackage{ifpdf}
@@ -9,30 +9,37 @@
 \usepackage{proof}
 \usepackage{multicol}
 \usepackage{amssymb}
-%\usepackage[all]{xy}
-\usepackage{mathrsfs}
+% %\usepackage[all]{xy}
 \usepackage{mathpartir}
-\usepackage{xltxtra}
 \usepackage{cmll}
 \usepackage{tikz}
 \usepackage{stmaryrd}
-\usepackage{cmll}
 \usepackage{galois}
+
+\usetheme{metropolis}
 
 \usepackage{minted}
 \usemintedstyle{manni}
 
 \usepackage{inconsolata}
 \setmonofont[Scale=0.8]{Inconsolata}
-\setsansfont{Linux Biolinum O}
 \usepackage{unicode-math}
 \usefonttheme{professionalfonts}
 \setmathfont{Asana Math}
 
-\frenchbsetup{og=«, fg=»}
+\metroset{
+    sectionpage=progressbar,
+    numbering=counter,
+    progressbar=frametitle,
+}
 
-\useoutertheme{infolines}
-\useoutertheme{smoothbars}
-\usetheme{Darmstadt}
-\useinnertheme{circles}
+\setbeamertemplate{section in toc}[sections numbered] % To get numbers in TOC
+
+% \useinnertheme{circles}
+
+% \useoutertheme{infolines}
+% \useoutertheme{smoothbars}
+% \useinnertheme{circles}
 \setbeamercovered{transparent}
+
+\newcommand{\ok}[1]{{\usebeamercolor[fg]{block title example}#1}}
