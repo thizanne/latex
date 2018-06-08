@@ -1,11 +1,20 @@
 % Defines some unicode chars to be mapped into commands, so that they
-% can be displayed even if the font doesnt have the glyph for the charB
+% can be displayed even if the font doesnt have the glyph for the char
 
 \usepackage{newunicodechar}
+
+\newunicodechar{ }{~}
+
+\newunicodechar{→}{\rightarrow}
+
+\newunicodechar{≠}{\ne}
+\newunicodechar{×}{\times}
 
 \newunicodechar{∀}{\forall}
 \newunicodechar{∃}{\exists}
 \newunicodechar{∈}{\in}
+\newunicodechar{⊤}{\top}
+\newunicodechar{⊥}{\bot}
 
 \newunicodechar{α}{\alpha}
 \newunicodechar{β}{\beta}
